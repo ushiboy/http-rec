@@ -1,0 +1,38 @@
+{
+  "name": "http-rec",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "files": [
+    "src",
+    "lib",
+    "bin"
+  ],
+  "bin": {
+    "recHttp": "./bin/recHttp.js"
+  },
+  "scripts": {
+    "build": "rm -rf lib && babel src --out-dir lib",
+    "test": "mocha test/*-test.js test/**/*-test.js",
+    "mocha": "mocha"
+  },
+  "author": "ushiboy",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "express": "^4.13.3",
+    "http-proxy": "^1.12.0",
+    "morgan": "^1.6.1",
+    "sequelize": "^3.14.2",
+    "sqlite3": "^3.1.1"
+  },
+  "devDependencies": {
+    "babel": "^6.1.18",
+    "babel-cli": "^6.2.0",
+    "babel-core": "^6.2.1",
+    "babel-preset-es2015": "^6.1.18",
+    "espower-babel": "^4.0.0",
+    "mocha": "^2.3.4",
+    "power-assert": "^1.2.0"
+  }
+}
